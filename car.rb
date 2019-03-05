@@ -3,6 +3,7 @@ class Car
   MILES_PER_GALLON = 20
 
   attr_reader :fuel
+  
   def initialize
     @fuel = 0
   end
@@ -12,7 +13,7 @@ class Car
   end
 
   def range
-    0
+    @fuel * MILES_PER_GALLON
   end
 
 end
